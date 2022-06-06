@@ -1,7 +1,11 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  return <CartContext.Provider>{children}</CartContext.Provider>;
+  // const {count ,setcount}=useState(1)
+  // const handleincre=(value)=>{
+  //   setcartcount(value+cartcount)
+  //     }
+  return <CartContext.Provider  >{children}</CartContext.Provider>;
 };
